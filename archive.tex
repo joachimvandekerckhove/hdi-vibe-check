@@ -1,0 +1,39 @@
+
+\begin{equation*}
+    P(X - 1) =
+    \begin{cases}
+    \gamma + (1-\gamma)\frac{1}{1+e'[-\eta]} & \text{Item Response Theory} \\ %That is an ugly negation slash but I can't find a better looking one atm
+    q + (1-q)b & \text{Multinomial Processing Tree}.
+    \end{cases}
+\end{equation*}
+
+q is the probability that you know the item
+1-q you don't know the item but guess (b)
+where $\gamma$ and $q$ are unknown but we want to estimate it.
+
+\begin{equation*}    
+    \gamma &= b
+\end{equation*}
+
+\begin{equation*}
+    q &= \frac{1}{1+e'{-\eta}}
+\end{equation*}
+
+
+\begin{equation*}
+J = \begin{bmatrix}
+1 & 0 \\
+0 & \frac{1}{q(1-q)} 
+\end{bmatrix}
+\end{equation*}
+
+eta is the difference entween item difficulty and participants ability
+
+Items own dificulty
+Persons own ability
+
+eta would have subscripts ip, but there are not ixp of them, there are i+p of them
+
+The dominance parameter is always split between person and item
+
+Three items, two people
