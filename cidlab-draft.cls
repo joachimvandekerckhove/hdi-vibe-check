@@ -82,7 +82,8 @@
 \setboolean{displaywatermark}{true} % Set to false to remove the watermark
 \AtBeginDocument{%
   \ifthenelse{\boolean{displaywatermark}}{%
-  \newwatermark[allpages,color=gray!10,angle=45,scale=2.75,xpos=0,ypos=0]{\textsc{author\\final version}}}{}
+  \newwatermark[allpages,color=gray!10,angle=45,scale=5.75,xpos=0,ypos=0]{\textsc{draft}}}{}
+  %\newwatermark[allpages,color=gray!10,angle=45,scale=2.75,xpos=0,ypos=0]{\textsc{author\\final version}}}{}
 }
 
 %% Copyright statement (not used)
